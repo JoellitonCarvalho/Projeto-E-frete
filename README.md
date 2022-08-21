@@ -1,47 +1,47 @@
-Android Sample App For Fetching  Github Repository 
+Aplicativo de exemplo do Android para buscar o repositório do Github 
 
 
 
 
-1. This project consists of multiple modules
-2. Dynamic Feature Module. (details repository)
-3. MVVM Design Pattern
+1. Este projeto consiste em vários módulos
+2. Módulo de recursos dinâmicos. (repositório de detalhes)
+3. Padrão de design MVVM
 
 
 
 
-## Requirement:                                                                                       Status
+## Requerimento:                                                                                       
 
-Application which shows the top 50 top most starred github repositories by searching with             Done
-the "Android" keyword.
+Aplicativo que mostra os 50 principais repositórios github mais estrelados pesquisando com
+a palavra-chave "Android".
 
- A list of repositories page where list of repositories showed.                                      Done
- List fetched from https://api.github.com/ api using "Android" as query keyword.                     Done
- List can be sorted by either last update date time or star count.                                   Done
- Selected sorting option persists in further app sessions.                                           Done
- A repo details page, to which navigated by clicking on an item from the list.                       Done
- Details page shows repo owner's name, photo, repository's description, last update date             Done
- time in month-day-year hour:seconds format, each field in 2 digit numbers.                          Done (Have a issue for device bellow android 8)
- The repository which loaded once, is saved for offline browsing.                                    Done
-
-
+Uma página de lista de repositórios onde a lista de repositórios era exibida. 
+ Lista obtida em https://api.github.com/ api usando "Android" como palavra-chave de consulta. 
+ A lista pode ser classificada por data e hora da última atualização ou contagem de estrelas. 
+ A opção de classificação selecionada persiste em outras sessões do aplicativo. 
+ Uma página de detalhes do repositório, para a qual navegou clicando em um item da lista. 
+ A página de detalhes mostra o nome do proprietário do repositório, foto, descrição do repositório, data da última atualização.
+ Hora no formato mês-dia-ano hora: segundos, cada campo em números de 2 dígitos. Concluído (tenho um problema com o dispositivo abaixo do Android 8)
+ O repositório que carregou uma vez é salvo para navegação offline.                                
 
 
 
 
 
 
-## Used Libraries        Reason Used In this Project
- Jetpack Compose         Design Showing Repository List and Details of specific Repository
- Navigation              Used for Fragment transitions)
- View Binding            For Bind views
- ViewModel               hold Repository Data for providing to UI
- LiveData                Observe data 
- Kotlin Coroutine        Fetching  Server Data
- Dagger2                 Dependency Injection)
- Hilt                    Dependency Injection for Android)
- Room Database           Save Repository Data explore from list
- Retrofit                HTTP Request
+
+
+## Bibliotecas utilizadas:          
+ Jetpack Compose         
+ Navigation              
+ View Binding            
+ ViewModel               
+ LiveData                 
+ Kotlin Coroutine        
+ Dagger2                 
+ Hilt                    
+ Room Database           
+ Retrofit                
 
 
  
@@ -69,10 +69,10 @@ Retrofit.Builder()
 
 #Feature 
 
-1. Show github repository list
-2. Show Details For each repository 
-3. Repository can be order by star count or last updated 
-4. Selected order will save for future 
-5. Save Browse data
-6. Delete Browse data on Long press
+1. Mostrar lista de repositórios do github
+2. Mostrar detalhes para cada repositório 
+3. O repositório pode ser ordenado por contagem de estrelas ou atualizado pela última vez 
+4. O pedido selecionado será salvo para futuro 
+5. Salvar dados de navegação
+6. Excluir dados de navegação ao pressionar longamente
 
