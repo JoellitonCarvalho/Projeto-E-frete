@@ -1,14 +1,8 @@
 Aplicativo de exemplo do Android para buscar o repositório do Github 
 
-
-
-
 1. Este projeto consiste em vários módulos
 2. Módulo de recursos dinâmicos. (repositório de detalhes)
 3. Padrão de design MVVM
-
-
-
 
 ## Requerimento:                                                                                       
 
@@ -24,13 +18,6 @@ Uma página de lista de repositórios onde a lista de repositórios era exibida.
  Hora no formato mês-dia-ano hora: segundos, cada campo em números de 2 dígitos. Concluído (tenho um problema com o dispositivo abaixo do Android 8)
  O repositório que carregou uma vez é salvo para navegação offline.                                
 
-
-
-
-
-
-
-
 ## Bibliotecas utilizadas:          
  Jetpack Compose         
  Navigation              
@@ -43,18 +30,14 @@ Uma página de lista de repositórios onde a lista de repositórios era exibida.
  Room Database           
  Retrofit                
 
-
- 
-
-
-## Build HTTP Client
+## Construir cliente HTTP
 Retrofit.Builder()
       .client(okHttpClient)
       .baseUrl("https://api.github.com/")
       .addConverterFactory(converterFactory)
       .build()
 
-## Build Request  APi
+## Solicitação de compilação - [API]
   interface Service {
     @GET("search/repositories")
     suspend fun getHotRepos(
