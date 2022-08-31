@@ -1,4 +1,4 @@
-Aplicativo de exemplo do Android para buscar o repositório do Github 
+Aplicativo de exemplo do Android para buscar o repositório do Github - Trabalho em parceria com o Dev [mdsohiduddin]
 
 1. Este projeto consiste em vários módulos
 2. Módulo de recursos dinâmicos. (repositório de detalhes)
